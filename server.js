@@ -19,6 +19,6 @@ app.get('/api/joe', (request, response) =>{
     response.json(joe)
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT ||PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 } )
